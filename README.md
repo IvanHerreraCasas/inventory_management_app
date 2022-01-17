@@ -12,9 +12,9 @@ The app was made to manage the inventory of a small business/medium business, it
 
 ## Screenshots
 
-Categories                 |  Solarized Ocean            |    Sales
-          :---:            |         :---:               |    :---:
-<img src="screenshots/sc_categories.png" width="30%" height="30%">   |  <img src="screenshots/sc_products.png" width="30%" height="30%">  |   <img src="screenshots/sc_sales.png" width="30%" height="30%">
+|         Categories        |          Products           |    Sales     |
+|          :---:            |         :---:               |    :---:     |
+|<img src="screenshots/sc_categories.png" width="30%" height="30%">|<img src="screenshots/sc_products.png" width="30%" height="30%">|<img src="screenshots/sc_sales.png" width="30%" height="30%">|
 
 ## Dependencies
 
