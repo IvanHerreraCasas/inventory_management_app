@@ -45,7 +45,6 @@ class _CategoriesPageState extends ConsumerState<CategoriesPage> {
           ),
           SearchBar(
             onSubmitted: (value) => setState(() => textQuery = value),
-            onSuffixTap: () => setState(() => textQuery = ''),
           ),
           const SizedBox(height: 20),
           Expanded(

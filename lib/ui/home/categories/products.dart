@@ -54,7 +54,6 @@ class _ProductsPageState extends ConsumerState<Products> {
             children: [
               SearchBar(
                 onSubmitted: (value) => setState(() => textQuery = value),
-                onSuffixTap: () => setState(() => textQuery = ''),
               ),
               const SizedBox(height: 20),
               productsAsyncValue.when(

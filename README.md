@@ -1,6 +1,8 @@
 # Inventory management app
 
-The app was made to manage the inventory of a small business/medium business, it organize the data (products) in categories, and allow to add sales and purchases for an easy control.
+![Inventory management mockup](mockups/inventory_management.png)
+
+The app was made to manage the inventory of a small business/medium business, it organizes the data (products) in categories, and allow to add sales and purchases for an easy control.
 
 
 ## Features
@@ -9,12 +11,6 @@ The app was made to manage the inventory of a small business/medium business, it
 - Search bar for categories and products.
 - Date picker to request the purchases and sales of different days.
 
-
-## Screenshots
-
-|         Categories        |          Products           |    Sales     |
-|          :---:            |         :---:               |    :---:     |
-|<img src="screenshots/sc_categories.png" width="30%" height="30%">|<img src="screenshots/sc_products.png" width="30%" height="30%">|<img src="screenshots/sc_sales.png" width="30%" height="30%">|
 
 ## Dependencies
 

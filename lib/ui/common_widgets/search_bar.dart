@@ -4,25 +4,15 @@ class SearchBar extends StatefulWidget {
   const SearchBar({
     Key? key,
     required this.onSubmitted,
-    required this.onSuffixTap,
   }) : super(key: key);
 
   final void Function(String textQuery) onSubmitted;
-  final void Function() onSuffixTap;
-
   @override
   State<SearchBar> createState() => _SearchBarState();
 }
 
 class _SearchBarState extends State<SearchBar> {
-  late TextEditingController controller;
-
-  @override
-  void initState() {
-    controller = TextEditingController();
-    super.initState();
-  }
-
+  final controller = TextEditingController();
   @override
   void dispose() {
     controller.dispose();
@@ -33,22 +23,15 @@ class _SearchBarState extends State<SearchBar> {
   Widget build(BuildContext context) {
     return TextField(
       controller: controller,
-      onSubmitted: widget.onSubmitted,      
+      onSubmitted: widget.onSubmitted,
+      textAlignVertical: TextAlignVertical.center,
       decoration: InputDecoration(
         contentPadding: EdgeInsets.zero,
-        isCollapsed: true,
-        isDense: true,
-        border: const OutlineInputBorder(),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(20)
+        ),
         hintText: 'Search',
         prefixIcon: const Icon(Icons.search),
-        suffix: IconButton(
-          padding: EdgeInsets.zero,
-          onPressed: () {
-            controller.text = '';
-            widget.onSuffixTap();
-          },
-          icon: const Icon(Icons.cancel),
-        ),
       ),
     );
   }
